@@ -1,0 +1,132 @@
+<!-- simple input form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,900;1,400;1,600;1,900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-.........." crossorigin="anonymous" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', 'Sans-serif'
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            /* try to make height and width property*/
+        }
+        .logo i{
+            position: relative; /* not positioning the element in relation to the outer element but the whole body tag itself ?? */
+            /* why relative need top 25% to position it in the middle half height */
+            font-size: 20px;
+            font-weight: 700; /*not make it bold*/
+            top: 25%; 
+        }
+        
+        .contact{
+            display: flex;
+            justify-content: center;
+            width: 300px;
+        }
+
+        .contact i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: rgb(208, 0, 208);
+        }
+        .form-background{
+            box-sizing: border-box;
+            width: 40%;
+            height: 50%;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        
+        label { 
+            display: block;  
+            margin: 10px 0;  
+            padding-bottom: 20px;  
+        }  
+
+        input {
+            border-radius: 2px;   
+            box-sizing: border-box;  
+            width: 98%;
+            padding: 6px;  
+        }
+
+        .inline {
+            width: 49%;  
+            display: inline-block;  
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-cloud">HW_Weather</i> <!-- turn into normal later-->
+            </div>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <div class="form-background">
+                <div class="inline input">
+                    <label for="">First Name
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="inline input">
+                    <label for="">Last Name
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="input">
+                    <label for="">Email
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="inline input">
+                    <label for="">Password
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="inline input">
+                    <label for="">Confirm Password
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

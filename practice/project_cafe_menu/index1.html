@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu {
+            width: 60%;
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        hr {
+            border: 1px dashed #ddd;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        h1, h2 {
+            font-family: 'Oleo Script', sans-serif;
+            color: #5b3924;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            background-color: #ffefc7;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .section {
+            width: 45%;
+        }
+
+        .section p {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #5b3924;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .contact p {
+            margin: 0 10px;
+        }
+
+        .icons {
+            margin-left: 10px;
+        }
+
+        .icons i {
+            margin: 0 5px;
+        }
+
+        .illustration {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .illustration img {
+            width: 45%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <header>
+            <h1>Ice Cream Menu</h1>
+        </header>
+        <div class="illustration">
+            <img src="https://img.freepik.com/free-vector/ice-cream-cones-chocolate-wafers-set_1284-17489.jpg?size=338&ext=jpg" alt="Ice Cream Illustration">
+            <img src="https://img.freepik.com/free-vector/realistic-ice-cream-cone-illustration_1284-30122.jpg?size=338&ext=jpg" alt="Ice Cream Illustration">
+        </div>
+        <main class="content">
+            <div class="section">
+                <h2>Ice Cream</h2>
+                <p>Cookie Dough <span class="price">$13.00</span></p>
+                <p>Vanilla Bean <span class="price">$12.00</span></p>
+                <p>Cotton Candy <span class="price">$16.00</span></p>
+                <p>Peanut Butter <span class="price">$18.00</span></p>
+                <p>Salted Caramel <span class="price">$10.00</span></p>
+            </div>
+            <div class="section">
+                <h2>Ice Cream</h2>
+                <p>Cookie Dough <span class="price">$17.00</span></p>
+                <p>Vanilla Bean <span class="price">$18.00</span></p>
+                <p>Cotton Candy <span class="price">$19.00</span></p>
+                <p>Peanut Butter <span class="price">$12.00</span></p>
+                <p>Salted Caramel <span class="price">$11.00</span></p>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="contact">
+                <p>yourwebsite.com</p>
+                <div class="icons">
+                    <i class="fas fa-phone"></i> <span>+123-456-7890</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
